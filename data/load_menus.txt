@@ -1,0 +1,5 @@
+# TODO: Task 1.1
+
+mongoimport -d restaurant -c menus --type=json --jsonArray --file=menus.json
+
+mongoimport  --uri="mongodb+srv://<username>:<password>@csfexam.389qz.mongodb.net/?retryWrites=true&w=majority&appName=CSFexam"  --username=<username> --password=<password> --db=restaurant --collection=menus --type=json --jsonArray --file=./menus.json
