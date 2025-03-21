@@ -35,6 +35,6 @@ create table place_orders (
 
 
 select * from place_orders;
-
+select * from customers;
 
 
