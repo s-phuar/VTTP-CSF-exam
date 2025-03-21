@@ -42,5 +42,37 @@ public class OrdersRepository {
   // Write the native MongoDB query for your access methods in the comment below
   //
   //  Native MongoDB query here
+  	/*db.orders.insertOne({
+    "_id": "19c2fe46",
+    "order_id": "19c2fe46",
+    "payment_id": "01JPVVQ4Q45DVVQPT74XWY985J",
+    "username": "fred",
+    "timestamp": MM/dd/yyyy HH:mm:ss,
+
+  "items": [
+    {
+      "id": "9aedc2a8",
+      "price": 9.2,
+      "quantity": 1
+    },
+    {
+      "id": "b9f0f5e1",
+      "price": 7.7,
+      "quantity": 1
+    },
+    {
+      "id": "4936f7a8",
+      "price": 6.1,
+      "quantity": 1
+    }
+  ]
+
+	 })
+	*/
+  public void insertOrder(Document doc){
+    
+    template.insert(doc, "orders");
+  }
+
   
 }
